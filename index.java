@@ -14,6 +14,8 @@ public class index extends players {
 		players.beginGame(true);
 		
 		startGame.game();
+
+			
 		
 		
 	}
