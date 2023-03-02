@@ -80,6 +80,10 @@ public class players {
 						System.out.println("Bust\n--------------------------------------");
 						P1CurrentScore = P1CurrentScore + P1score;
 						break;
+					} else if(P1score %2 == 1 && P1CurrentScore == 0) {
+						System.out.println("Bust\n--------------------------------------");
+						P1CurrentScore = P1CurrentScore + P1score;
+						break;
 					} else if (P1CurrentScore== 0){
 						System.out.println("Game Won");
 						P1LegWins ++;
@@ -99,6 +103,10 @@ public class players {
 				if (P2CurrentScore == 1 || P2CurrentScore < 0) { 
 					System.out.println("Bust\n--------------------------------------");
 					P2CurrentScore = P2CurrentScore + P2score;
+					break;
+				} else if(P2score %2 == 1 && P2CurrentScore == 0) {
+					System.out.println("Bust\n--------------------------------------");
+					P1CurrentScore = P1CurrentScore + P2score;
 					break;
 				} else if (P2CurrentScore== 0){
 					System.out.println("Game Won");
