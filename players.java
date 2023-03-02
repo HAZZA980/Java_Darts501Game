@@ -106,7 +106,7 @@ public class players {
 					break;
 				} else if(P2score %2 == 1 && P2CurrentScore == 0) {
 					System.out.println("Bust\n--------------------------------------");
-					P1CurrentScore = P1CurrentScore + P2score;
+					P2CurrentScore = P2CurrentScore + P2score;
 					break;
 				} else if (P2CurrentScore== 0){
 					System.out.println("Game Won");
